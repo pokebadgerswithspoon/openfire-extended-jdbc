@@ -4,7 +4,7 @@
 
     <groupId>io.github.pokebadgerswithspoon.openfire</groupId>
     <artifactId>extended-jdbc</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>extended-jdbc</name>
@@ -22,30 +22,15 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.igniterealtime</groupId>
-            <artifactId>openfire</artifactId>
-            <version>[3.6.4, 3.9.0)</version>
+            <groupId>org.igniterealtime.openfire</groupId>
+            <artifactId>xmppserver</artifactId>
+            <version>[4.2.0, 4.3.0)</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>javax.mail</groupId>
-            <artifactId>mail</artifactId>
-            <version>[1.4.0, 1.5.0)</version>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>1.9</version>
-            <scope>test</scope>
-            <type>jar</type>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>jetty-security</artifactId>
+            <version>7.0.0.pre5</version>
         </dependency>
     </dependencies>
-    <repositories>
-        <repository>
-            <id>thirdparty-uploads</id>
-            <name>JBoss Thirdparty Uploads</name>
-            <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-uploads</url>
-        </repository>
-    </repositories>
 </project>
